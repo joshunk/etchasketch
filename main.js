@@ -1,9 +1,15 @@
-let divGrid = document.querySelector('#container');
-
-for (let i = 1; i <= 16; i++) {
+for (let i = 1; i <= 256; i++) {
 	let newDiv = document.createElement('div');
-    newDiv.textContent = (i);
+    newDiv.className = "gridBox"
 	
 	container.appendChild(newDiv);
 }
+
+let gridCount = document.getElementsByClassName('gridBox');
+
+ for (let i = 0; i < gridCount.length; i++){
+    gridCount[i].addEventListener("mouseenter", function(){
+        gridCount[i].style.backgroundColor = "red";
+    })
+ }
 
