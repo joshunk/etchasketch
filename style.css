@@ -1,4 +1,5 @@
 #container > div{
+    box-sizing: border-box;
     border: 1px solid black;
     width: 25px;
     height: 25px;
@@ -9,6 +10,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 400px;
     margin: auto;
+    border: 1px solid black;
+}
+
+#gridButton{
+    color: red;
+    margin: 15px , 0px;
+}
+
+.gridButtonDiv{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
 }
